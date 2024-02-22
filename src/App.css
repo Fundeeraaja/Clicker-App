@@ -2,13 +2,69 @@
   grid-area: header; }
 .item2 { 
   grid-area: menu; 
-  margin-left: 690px;
+  margin-left: 695px;
+  background-image: url("background.gif");
+  background-blend-mode: darken;
+  border: 5px double white;
+
   }
 
+  body{
+    background-color:rgb(97, 160, 255);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+  }
 
+h1 {
+  color: rgb(77, 133, 255);
+  
+}
+
+.txt{
+    color: rgb(139, 212, 255);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+  }
+
+.subtitle {
+  font-style: italic;
+  color: rgb(141, 204, 255);
+  font-size: 36px;
+  font-weight: bolder;
+}
 .cute{
   width: 300px;
   height: 300px;
+  background-image: url("AC1.png");
+  background-size: 270px;
+  background-repeat: no-repeat;
+  background-position: 60%;
+  background-color: rgba(240, 248, 255, 0);
+  border-style: none;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .3s ease-in-out;  
+}
+
+
+
+.cute:hover {
+  transform:scale(120%);
+  -ms-transform:scale(120%);
+  -webkit-transform:scale(120%);
+}
+
+.cute:active{
+  background-image: url("AC2.png");
+  background-size: 270px;
+  background-repeat: no-repeat;
+  background-position: 60%;
+  background-color: rgba(240, 248, 255, 0);
+  border-style: none;
+  transform:scale(125%);
+  -ms-transform:scale(125%);
+  -webkit-transform:scale(125%);
+  transition: transform .1s ease-out;  
 }
 
 .grid-container {
@@ -18,13 +74,19 @@
     'menu main main main right right'
     'menu footer footer footer footer footer';
   gap: 10px;
-  background-color: #2196F3;
+  
   padding: 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+}
+
+.clickCounter{
+  color: rgb(90, 181, 255);
+  font-weight: bolder;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 4px 4px rgb(83, 27, 189);
 }
