@@ -75,9 +75,12 @@ h1 {
     'menu footer footer footer footer footer';
   gap: 10px;
   
-  padding: 10px;
 }
-
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
 .grid-container > div {
   text-align: center;
   padding: 20px 0;
@@ -85,8 +88,16 @@ h1 {
 }
 
 .clickCounter{
-  color: rgb(90, 181, 255);
-  font-weight: bolder;
+  color: rgb(142, 204, 255);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 4px 4px rgb(83, 27, 189);
+  text-shadow: 4px 4px rgba(189, 27, 116, 0.521);
+}
+
+@media screen and (max-width: 500px) {
+ 
+  .cute,
+  .txt,
+  .clickCounter {
+      width: 70%;
+    }
 }

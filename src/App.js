@@ -7,7 +7,8 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
 return (
-  
+
+<body>
     <div class="grid-container">
       <div class="item1">
           <h1>Click the Λlice</h1>
@@ -23,6 +24,8 @@ return (
       
       
     </div>
+    
+</body>
   );
 }
 
