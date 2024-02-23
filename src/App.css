@@ -5,18 +5,36 @@
   margin-left: 695px;
   background-image: url("background.gif");
   background-blend-mode: darken;
+  background-size: 200%;
+  background-repeat: no-repeat;
   border: 5px double white;
-
+  max-width: 100%;
+  max-height: 480px;
+  padding: 100px;
+  width: 100%;
+  }
+  .item3 {
+    grid-area: footer; 
+  background-image: url("background.gif");
+  background-blend-mode: darken;
+  border: 5px double white;
+  max-width: 400px;
+  max-height: 470px;
+  padding: 100px;
+  width: 100%;
   }
 
-  body{
+
+.theme { 
+    height: 1800px;
+    background-size: 500%;
     background-color:rgb(97, 160, 255);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
-  }
+} 
+
 
 h1 {
   color: rgb(77, 133, 255);
-  
 }
 
 .txt{
@@ -46,8 +64,6 @@ h1 {
   transition: transform .3s ease-in-out;  
 }
 
-
-
 .cute:hover {
   transform:scale(120%);
   -ms-transform:scale(120%);
@@ -74,17 +90,14 @@ h1 {
     'menu main main main right right'
     'menu footer footer footer footer footer';
   gap: 10px;
-  
 }
-@media screen and (max-width: 800px) {
-  .left, .main, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
+
 .grid-container > div {
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+  margin: 0 auto;
+    width: 80%;
 }
 
 .clickCounter{
@@ -93,11 +106,42 @@ h1 {
   text-shadow: 4px 4px rgba(189, 27, 116, 0.521);
 }
 
-@media screen and (max-width: 500px) {
- 
-  .cute,
-  .txt,
-  .clickCounter {
-      width: 70%;
-    }
+.menuButton {
+  width: 130px;
+  height: 70px;
+  border: 3px inset #4c6ae5;
+  background-image: linear-gradient( rgb(139, 176, 255), rgb(255, 172, 247));
+  color: rgb(51, 60, 142);
+  font-size: 27px;
+  font-weight: bold;
+  box-shadow: 4px 4px 1px#1f2d64;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .1s ease-out; 
+  margin-bottom: 5px; 
+  transform: rotate(5deg);
+  
+}
+.menuButton:hover {
+  background-image: linear-gradient( rgb(175, 200, 254), rgb(255, 172, 247));
+  background-blend-mode: color-dodge;
+  transform:scale(120%);
+  -ms-transform:scale(120%);
+  -webkit-transform:scale(120%);
+}
+.menuButton:active {
+  background-image: linear-gradient( rgb(153, 183, 252), rgb(165, 219, 255));
+  background-blend-mode: normal;
+  transform:scale(130%);
+  -ms-transform:scale(130%);
+  -webkit-transform:scale(130%);
+}
+
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  [class*="grid-container"]
+  [class*="div"] {
+    width: 100%;
+  }
 }
