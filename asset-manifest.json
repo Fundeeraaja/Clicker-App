@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Clicker-App/static/css/main.a85f12dd.css",
+    "main.css": "/Clicker-App/static/css/main.1d2d0e82.css",
     "main.js": "/Clicker-App/static/js/main.2a688565.js",
     "static/js/453.ed3810f9.chunk.js": "/Clicker-App/static/js/453.ed3810f9.chunk.js",
     "static/media/background.gif": "/Clicker-App/static/media/background.9a6933a56b2f501f6c2d.gif",
@@ -8,12 +8,12 @@
     "static/media/AC2.png": "/Clicker-App/static/media/AC2.66072311e24f7fee6a60.png",
     "static/media/logo.svg": "/Clicker-App/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Clicker-App/index.html",
-    "main.a85f12dd.css.map": "/Clicker-App/static/css/main.a85f12dd.css.map",
+    "main.1d2d0e82.css.map": "/Clicker-App/static/css/main.1d2d0e82.css.map",
     "main.2a688565.js.map": "/Clicker-App/static/js/main.2a688565.js.map",
     "453.ed3810f9.chunk.js.map": "/Clicker-App/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a85f12dd.css",
+    "static/css/main.1d2d0e82.css",
     "static/js/main.2a688565.js"
   ]
 }
