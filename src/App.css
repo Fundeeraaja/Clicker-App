@@ -1,40 +1,55 @@
 .item1 { 
-  grid-area: header; }
+    grid-area: header; }
 .item2 { 
-  grid-area: menu; 
-  margin-left: 695px;
-  background-image: url("background.gif");
-  background-blend-mode: darken;
-  background-size: 200%;
-  background-repeat: no-repeat;
-  border: 5px double white;
-  max-width: 100%;
-  max-height: 480px;
-  padding: 100px;
-  width: 100%;
+    grid-area: menu; 
+    margin-left: 695px;
+    background-image: url("background.gif");
+    background-blend-mode: darken;
+    background-size: 300%;
+    background-repeat: no-repeat;
+    border: 5px double white;
+    max-width: 100%;
+    max-height: 480px;
+    padding: 100px;
+    width: 100%;
+    text-overflow: clip;
   }
+
   .item3 {
     grid-area: footer; 
-  background-image: url("background.gif");
-  background-blend-mode: darken;
-  border: 5px double white;
-  max-width: 400px;
-  max-height: 470px;
-  padding: 100px;
-  width: 100%;
+    background-image: url("background.gif");
+    background-blend-mode: darken;
+    border: 5px double white;
+    max-width: 400px;
+    min-width: 200px;
+    max-height: 470px;
+    padding-right: 500px;
+    width: 300px;
   }
 
-
 .theme { 
-    height: 1800px;
+    padding-right: 500px;
+    padding-bottom: 300px;
     background-size: 500%;
+    background-repeat: repeat;
     background-color:rgb(97, 160, 255);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
 } 
 
-
 h1 {
   color: rgb(77, 133, 255);
+  font-size: 30px;
+}
+
+.logo{
+  color: rgb(77, 133, 255);
+  font-size: 70px;
+  transform: 
+        perspective(98px)
+        rotateX(31deg)
+        rotateY(0deg)
+        rotateZ(0deg)
+        
 }
 
 .txt{
@@ -63,13 +78,11 @@ h1 {
   -ms-transition: -ms-transform .8s ease-in-out;
   transition: transform .3s ease-in-out;  
 }
-
 .cute:hover {
   transform:scale(120%);
   -ms-transform:scale(120%);
   -webkit-transform:scale(120%);
 }
-
 .cute:active{
   background-image: url("AC2.png");
   background-size: 270px;
@@ -97,13 +110,24 @@ h1 {
   padding: 20px 0;
   font-size: 30px;
   margin: 0 auto;
-    width: 80%;
+    width: 85%;
+    text-overflow: clip; 
 }
 
 .clickCounter{
-  color: rgb(142, 204, 255);
+  color: rgb(158, 231, 255);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 4px 4px rgba(189, 27, 116, 0.521);
+  text-overflow: clip;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 1px 0 #000;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+.clickCounter:hover {
+  transform:rotate(10deg);
+  -ms-transform:rotate(10deg);
+  -webkit-transform:rotate(10deg);
+  transition: transform .3s ease-in-out;  
 }
 
 .menuButton {
@@ -123,6 +147,7 @@ h1 {
   
 }
 .menuButton:hover {
+  color: rgb(116, 81, 243);
   background-image: linear-gradient( rgb(175, 200, 254), rgb(255, 172, 247));
   background-blend-mode: color-dodge;
   transform:scale(120%);
