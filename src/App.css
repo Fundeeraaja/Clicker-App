@@ -46,7 +46,7 @@ h1 {
   font-size: 70px;
   transform: 
         perspective(98px)
-        rotateX(31deg)
+        rotateX(5deg)
         rotateY(0deg)
         rotateZ(0deg)
         
@@ -82,6 +82,7 @@ h1 {
   transform:scale(120%);
   -ms-transform:scale(120%);
   -webkit-transform:scale(120%);
+
 }
 .cute:active{
   background-image: url("AC2.png");
@@ -122,6 +123,7 @@ h1 {
   -webkit-transition: -webkit-transform .8s ease-in-out;
     -ms-transition: -ms-transform .8s ease-in-out;
     transition: transform .3s ease-in-out;
+    text-overflow: clip; 
 }
 .clickCounter:hover {
   transform:rotate(10deg);

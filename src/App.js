@@ -7,11 +7,7 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
 
-/* function themeSwitch() {
-    document.getElementById("theme").style.backgroundColor = "red";
-  }
-**/
-  
+
 return (
 
 <body class="theme" id="theme">
@@ -34,9 +30,12 @@ return (
           <button class="menuButton" id="reset" onClick={() => setCount(0)}>RESET</button> <br/>
           <button class="menuButton" id="double" onClick={() => setCount(count * 2)}>DOUBLE<br/>SCORE</button> <br/>
           <button class="menuButton" id="slash" onClick={() => setCount(count / 2)}>SLASH<br/>SCORE</button> <br/>
-          
-          
       </div>  
+      <button class="menuButton">
+          <a class="kofilink" href="https://ko-fi.com/fundeeraaja">
+            GIMME <br/> MONEY 
+          </a>
+        </button>
     </div>
 </body>
   );
